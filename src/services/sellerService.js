@@ -1,6 +1,6 @@
 import api from './api';
 
-export class SellersService {
+export class SellerService {
 
     async create(seller){
         const res = await api.post('vendedores', seller);

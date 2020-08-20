@@ -1,8 +1,6 @@
 import React, { createContext, useState, useEffect } from 'react';
 import { ProductService } from '../services/productService';
 
-import api from '../services/api';
-
 export const ProductContext = createContext();
 
 const ProductContextProvider = (props) => {
@@ -14,11 +12,12 @@ const ProductContextProvider = (props) => {
     const [editProduct, setEditProduct] = useState(null);
 
     useEffect(()=>{
-        async function callProductData() {
-            const res = await api.get('produtos');
-            setProducts(res.data);
+        async function callCustomerData() {
+            await productService
+                .readAll('')
+                .then(res => setProducts(res))
         }
-        callProductData();
+        callCustomerData();
     },[]);
 
     const createProduct = (product) => {
