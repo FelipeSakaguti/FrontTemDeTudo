@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import MenuBar from '../MenuBar'
-import { Container, Wrapper, Main, Header, MenuIcon, MenuSection } from './styles';
+import { Container, Wrapper, Main, Header, MenuIcon } from './styles';
 
 import Section from '../Section';
 

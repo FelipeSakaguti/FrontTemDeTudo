@@ -23,6 +23,8 @@ export const Menu = styled.div`
 
     @media (max-width: 480px){
         position: fixed;
+
+        z-index: 5;
         
         top: ${ ( { toggled }) => toggled ? '0' : '-100%' };
 
@@ -38,6 +40,7 @@ export const TopSide = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--menu-font);
 
     @media (min-width: 480px){
         align-items: flex-start;
@@ -58,7 +61,7 @@ export const Logo = styled.div`
     height: 41px;
 
     > path {
-        fill: var(--white);
+        fill: var(--menu-font);
     }
 `;
 
@@ -69,6 +72,7 @@ export const MenuButton = styled.button`
     align-items: left;
     > span {
         display: none;
+        color: var(--menu-font);;
     }
 
     @media (min-width: 960px) {
@@ -115,7 +119,7 @@ const iconCSS = css`
 
     width: 30px;
     height: 30px;
-    color: var(--white);
+    color: var(--menu-font);
 
     margin-left: 0px;
     @media (min-width: 960px){

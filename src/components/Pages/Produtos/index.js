@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
+import ProductList from './ProdutoList';
 
-// import { Container } from './styles';
+import { Header } from '../styles/styles.js'
 
-function Produtos() {
+function Produtos(props) {
+
   return (
-      <div><h1>Produtos</h1></div>
+    <>
+      <Header>
+        <h1>Produtos</h1>
+      </Header>
+      <ProductList/>
+    </>
   );
 }
 

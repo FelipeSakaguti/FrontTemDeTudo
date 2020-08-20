@@ -24,7 +24,7 @@ export const Main = styled.div`
 `
 
 export const Header = styled.div`
-  z-index:2;
+  z-index:6;
   position: sticky;
   top: 0;
   height: 40px;

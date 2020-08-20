@@ -1,0 +1,11 @@
+@media screen and (max-width: 960px) {
+    .third-column {
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .second-column {
+        display: none;
+    }
+  }

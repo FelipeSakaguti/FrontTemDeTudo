@@ -6,8 +6,6 @@ export default createGlobalStyle`
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-
-    color: var(--white);
   }
 
 
@@ -32,7 +30,9 @@ export default createGlobalStyle`
     --menu-buttom: #747474;
     --menu-hover: #193147;
     --menu-button-hover: #DFDFDF;
-    --white: #D9D9D9;
+    --white: #141b24;
+    --menu-font: #fdfefe;
+    --banner: #fdfefe;
     --menu-background: #1b2430;
   }
 `;
