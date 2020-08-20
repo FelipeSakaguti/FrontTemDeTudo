@@ -1,9 +1,9 @@
 import api from './api';
 
-export class SalersService {
+export class SellersService {
 
-    async create(product){
-        const res = await api.post('vendedores', product);
+    async create(seller){
+        const res = await api.post('vendedores', seller);
         return res.data;
     }
 
@@ -17,8 +17,8 @@ export class SalersService {
         return res.data;
     }
 
-    async update(product){
-        const res = await api.put('vendedores/'+product.id, product);
+    async update(seller){
+        const res = await api.put('vendedores/'+seller.id, seller);
         return res.data;
     }
 
