@@ -7,7 +7,7 @@ const CustomerContextProvider = (props) => {
 
     const customerService = new CustomerService();
 
-    const [customer, setCustomer] = useState([]);
+    const [customers, setCustomer] = useState([]);
     
     const [editCustomer, setEditCustomer] = useState(null);
 
@@ -24,7 +24,7 @@ const CustomerContextProvider = (props) => {
         async function callCustomerData() {
             await customerService
                 .create(customer)
-                .then(res => setCustomer([...customer, customer]))
+                .then(res => setCustomer([...customers, customer]))
         }
         
         callCustomerData();
@@ -34,14 +34,14 @@ const CustomerContextProvider = (props) => {
         async function callCustomerData() {
             await customerService
             .delete(id)
-            .then(() => setCustomer(customer.filter((p) => p.id !== id )));
+            .then(() => setCustomer(customers.filter((p) => p.id !== id )));
         }
 
         callCustomerData();
     }
 
     const findCustomer = (id) => {
-        const customerData = customer.find((p) => p.id === id);
+        const customerData = customers.find((p) => p.id === id);
 
         setEditCustomer(customerData);
     
@@ -62,7 +62,7 @@ const CustomerContextProvider = (props) => {
         .update(customer)
         .then((data) =>
             setCustomer(
-                customer.map((p) => (p.id === customer.id ? customer : p) )
+                customers.map((p) => (p.id === customer.id ? customer : p) )
             )
         );
 
@@ -78,7 +78,7 @@ const CustomerContextProvider = (props) => {
                 filterCustomer,
                 editCustomer,
                 setEditCustomer,
-                customer,
+                customers,
                 setCustomer
             }}
         >
