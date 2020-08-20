@@ -40,11 +40,9 @@ export const PrimeDataTable = styled(DataTable)`
 
 export const Container = styled.div`
   z-index:2;
-  position: sticky;
   top: 0;
   background: var(--primary);
   display: flex;
-  align-items: left;
   flex-direction: column;
 
   text-align: left;

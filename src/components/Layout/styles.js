@@ -21,10 +21,11 @@ export const Main = styled.div`
   flex-direction: column;
 
   width: 100%;
+  z-index: 1;
 `
 
 export const Header = styled.div`
-  z-index:6;
+  z-index: 9;
   position: sticky;
   top: 0;
   height: 40px;
