@@ -1,10 +1,17 @@
 import React from 'react';
+import VendaLista from './VendaList';
 
-// import { Container } from './styles';
+import { Header } from '../styles/styles.js'
 
-function Vendas() {
+function Vendas(props) {
+
   return (
-    <div><h1>Vendas</h1></div>
+    <>
+      <Header>
+        <h1>Vendas</h1>
+      </Header>
+      <VendaLista/>
+    </>
   );
 }
 

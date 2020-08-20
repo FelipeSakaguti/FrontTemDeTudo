@@ -24,7 +24,7 @@ export const Menu = styled.div`
     @media (max-width: 480px){
         position: fixed;
 
-        z-index: 5;
+        z-index: 99;
         
         top: ${ ( { toggled }) => toggled ? '0' : '-100%' };
 
@@ -66,7 +66,7 @@ export const Logo = styled.div`
 `;
 
 export const MenuButton = styled.button`
-    z-index: 5;
+    z-index: 99;
     display: flex;
     text-decoration: none;
     align-items: left;

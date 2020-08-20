@@ -34,5 +34,6 @@ export default createGlobalStyle`
     --menu-font: #fdfefe;
     --banner: #fdfefe;
     --menu-background: #1b2430;
+    --card-title-background: #1b2430;
   }
 `;

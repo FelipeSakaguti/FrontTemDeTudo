@@ -60,3 +60,7 @@ export const Container = styled.div`
 export const PrimeColumn = styled(Column) `
     color: '#999';
 `
+
+export const ShowOnEdit = styled.div `
+    display: ${ ( { show }) => show ? 'flex' : 'none' };
+`

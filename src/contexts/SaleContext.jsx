@@ -21,13 +21,18 @@ const SaleContextProvider = (props) => {
     },[]);
 
     const createSale = (sale) => {
+        console.log(sales)
         async function callSaleData() {
             await saleService
                 .create(sale)
-                .then(res => setSales([...sales, sale]))
+            await saleService
+                .readAll('')
+                .then(res => setSales(res))
         }
-        
+
         callSaleData();
+        console.log(sale)
+        console.log(sales)
     }
 
     const deleteSale = (id) => {
@@ -58,14 +63,15 @@ const SaleContextProvider = (props) => {
     }
 
     const updateSale = (sale) => {
-        saleService
-        .update(sale)
-        .then((data) =>
-            setSales(
-                sales.map((p) => (p.id === sale.id ? sale : p) )
-            )
-        );
+        async function callSaleData() {
+            await saleService
+                .update(sale)
+            await saleService
+                .readAll('')
+                .then(res => setSales(res))
+        }
 
+        callSaleData();
     }
 
     return ( 
