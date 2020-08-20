@@ -41,9 +41,9 @@ const CustomerContextProvider = (props) => {
     }
 
     const findCustomer = (id) => {
-        const customer = customer.find((p) => p.id === id);
+        const customerData = customer.find((p) => p.id === id);
 
-        setEditCustomer(customer);
+        setEditCustomer(customerData);
     
     }
 

@@ -1,10 +1,17 @@
 import React from 'react';
+import ClienteList from './ClienteList';
 
-// import { Container } from './styles';
+import { Header } from '../styles/styles.js'
 
-function Clientes() {
+function Clientes(props) {
+
   return (
-      <div><h1>CLientes</h1></div>
+    <>
+      <Header>
+        <h1>Cliente</h1>
+      </Header>
+      <ClienteList/>
+    </>
   );
 }
 

@@ -50,8 +50,8 @@ function ProdutoList() {
           <PrimeColumn className="second-column" field="marca" header="Marca" />
           <PrimeColumn className="second-column" field="fornecedor" header="Fornecedor" />
           <PrimeColumn className="second-column" field="classificacao" header="Classificação" />
-          <PrimeColumn className="third-column" field="qtd_estoque" header="Estoque" />
-          <PrimeColumn className="third-column" field="qtd_loja" header="Loja" />
+          <PrimeColumn className="third-column" field="qtd_estoque" header="Qtd. Estoque" />
+          <PrimeColumn className="third-column" field="qtd_loja" header="Qtd. Loja" />
           <PrimeColumn className="third-column" field="unidade_medida" header="Unid. Med." />
           <PrimeColumn className="third-column" field="custo" header="Custo" />
           <PrimeColumn className="third-column" field="venda" header="Venda" />

@@ -140,6 +140,7 @@ function ProdutoForm(props) {
           <InputNumber
             value={productData.custo}
             onChange={(e) => updateField(e.target.value, "custo")}
+            mode="currency" currency="BRL"
           />
           <label>Custo:</label>
         </div>
@@ -148,6 +149,7 @@ function ProdutoForm(props) {
           <InputNumber
             value={productData.venda}
             onChange={(e) => updateField(e.target.value, "venda")}
+            mode="currency" currency="BRL"
           />
           <label>Venda:</label>
         </div>

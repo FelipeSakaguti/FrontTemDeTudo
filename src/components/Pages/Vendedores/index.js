@@ -1,10 +1,17 @@
 import React from 'react';
+import SellerList from './SellerList';
 
-// import { Container } from './styles';
+import { Header } from '../styles/styles.js'
 
 function Vendedores() {
+
   return (
-      <div><h1>Vendedores</h1></div>
+    <>
+      <Header>
+        <h1>Vendedores</h1>
+      </Header>
+      <SellerList/>
+    </>
   );
 }
 

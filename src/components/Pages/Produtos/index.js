@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React from 'react';
 import ProductList from './ProdutoList';
 
 import { Header } from '../styles/styles.js'

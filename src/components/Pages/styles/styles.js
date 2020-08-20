@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 import { DataTable } from 'primereact/datatable';
-import { Button } from 'primereact/button';
 import { Column } from 'primereact/column';
 
 export const Header = styled.div`
