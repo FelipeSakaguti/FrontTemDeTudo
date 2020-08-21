@@ -93,21 +93,21 @@ function Dashboards() {
           <HeaderBox>
             <Card className="card-body">
               <CardTitle className="card-body">Vendas Semanais</CardTitle>
-              <CardText>R$ {valorTotal}   </CardText>
+              <CardText>R$ {valorTotal || '0'}   </CardText>
             </Card>
             <Card className="card-body">
               <CardTitle className="card-body">Lucro semanal</CardTitle>
-              <CardText>R$ {lucroSemanal} </CardText>
+              <CardText>R$ {lucroSemanal || '0'} </CardText>
             </Card>
             </HeaderBox>
             <HeaderBox>
             <Card className="card-body">
               <CardTitle className="card-body">Melhor Vendedor</CardTitle>
-              <CardText>R$ {bestSeller.venda}<br/>{bestSeller.nome_vendedor}</CardText>
+              <CardText>R$ {bestSeller? bestSeller.venda : '0'}<br/>{bestSeller? bestSeller.nome_vendedor : ''}</CardText>
             </Card>
             <Card className="card-body">
               <CardTitle className="card-body">Melhor Cliente</CardTitle>
-              <CardText>R$ {bestCustomer.venda}<br/>{bestCustomer.nome_cliente}</CardText>
+              <CardText>R$ {bestCustomer? bestCustomer.venda : '0'}<br/>{bestCustomer? bestCustomer.nome_cliente : ''}</CardText>
             </Card>
           </HeaderBox>    
         </HeaderDash>
