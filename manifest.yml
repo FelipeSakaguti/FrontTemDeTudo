@@ -1,7 +1,7 @@
 ---
 path: build/
-memory: 64M
+memory: 128M
 instances: 1
 domain: mybluemix.net
-disk_quota: 64M
+disk_quota: 128M
 buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
