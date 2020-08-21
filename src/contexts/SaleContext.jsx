@@ -31,8 +31,6 @@ const SaleContextProvider = (props) => {
         }
 
         callSaleData();
-        console.log(sale)
-        console.log(sales)
     }
 
     const deleteSale = (id) => {

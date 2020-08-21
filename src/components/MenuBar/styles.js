@@ -70,6 +70,7 @@ export const MenuButton = styled.button`
     display: flex;
     text-decoration: none;
     align-items: left;
+    margin-top: 10px;
     > span {
         display: none;
         color: var(--menu-font);;

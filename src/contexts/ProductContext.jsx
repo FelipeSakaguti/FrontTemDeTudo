@@ -24,7 +24,9 @@ const ProductContextProvider = (props) => {
         async function callProductData() {
             await productService
                 .create(product)
-                .then(res => setProducts([...products, product]))
+            await productService
+                .readAll('')
+                .then(res => setProducts(res))
         }
         
         callProductData();
@@ -58,14 +60,14 @@ const ProductContextProvider = (props) => {
     }
 
     const updateProduct = (product) => {
-        productService
-        .update(product)
-        .then((data) =>
-            setProducts(
-                products.map((p) => (p.id === product.id ? product : p) )
-            )
-        );
-
+        async function callProductData() {
+            await productService
+            .update(product)
+            await productService
+                .readAll('')
+                .then(res => setProducts(res))
+        }
+        callProductData();
     }
 
     return ( 

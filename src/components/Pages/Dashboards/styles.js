@@ -20,7 +20,7 @@ export const HeaderDash = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-top: 1rem;
+  margin-top: 3rem;
   max-width: 100%;
   
   @media(max-width: 1280px) {
@@ -35,8 +35,7 @@ export const HeaderBox = styled.div`
   @media(max-width: 1280px) {
     width: 100%;
   }
-  @media(max-width: 500px) {
-    display: flex;
+  @media(max-width: 600px) {
     flex-direction: column;
   }
 `;
@@ -48,7 +47,7 @@ export const MidDash = styled.div`
 `;
 
 export const BottomDash = styled.div`
-    display: flex;
+  display: flex;
   justify-content: center;
   flex-direction: row;
 `;
@@ -57,13 +56,12 @@ export const Card = styled(MDBCard)`
     margin: 1rem;
     width: 50%;
 
-    @media(max-width: 500px) {
-      width: 100%;
-    }
+    @media(max-width: 600px) {
+      width: 95%;
+  }
 
     @media (max-width: 1280px){
       position: relative;
-
     }
 `;
 
@@ -72,11 +70,16 @@ export const CardTitle = styled(MDBCard)`
     width: 150px;
     color: #fff;
     top: -40px;
-    max-height: 80px;
+    max-height: 45px;
+    padding: 10px 10px 10px 10px;
 `;
 
 export const CardText = styled(MDBCardText)`
-    position: sticky;
-    top: 0;
+    padding: 0px;
+    top: -40px;
+    position: relative;
+    text-align: top;
     align-items: center;
+    text-align: top;
+    font-size: 48px;
 `;

@@ -138,9 +138,10 @@ function VendaForm(props) {
             <label>Data venda:</label>
           </div>
           <br/>
+          <br/>
         </ShowOnEdit>
 
-        <br/>
+
         <Dropdown
           value={saleData.id_vendedor}
           options={sellers}
@@ -164,6 +165,7 @@ function VendaForm(props) {
           <InputNumber
             value={saleData.custo_unit}
             onChange={(e) => updateField(e.target.value, "custo_unit")}
+            mode="currency" currency="BRL"
           />
           <label>Custo Unit.:</label>
         </div>
@@ -172,6 +174,7 @@ function VendaForm(props) {
           <InputNumber
             value={saleData.valor_venda}
             onChange={(e) => updateField(e.target.value, "valor_venda")}
+            mode="currency" currency="BRL"
           />
           <label>Valor da Venda:</label>
         </div>
